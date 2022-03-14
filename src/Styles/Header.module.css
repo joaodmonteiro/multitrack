@@ -1,0 +1,49 @@
+.header {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    font-family: HelveticaNeueLTPro;
+    background-color: black;
+    border-bottom: 1px solid black;
+}
+
+.header > li {
+    width: 100%;
+    text-align: center;
+    display: grid;
+    place-items: center;
+}
+
+.header > li:hover {
+    background-color: white;
+}
+
+.header > li:hover > * {
+    color: black;
+}
+
+.header > li:not(.logo, .about) {
+    border-right: 1px solid white;
+}
+
+.header > li > * {
+    color: white;
+    font-size: 1vw;
+    white-space: nowrap;
+}
+
+.logo {
+    padding: 1vw 2vw;
+    background-color: white;
+}
+
+.logo > a > img {
+    width: 25vw;
+    color: white;
+}
+
+.applicants {
+    border-left: 1px solid black;
+}
