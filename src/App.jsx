@@ -8,6 +8,8 @@ function App() {
     <>
       <Header />
       <Carousel />
+      <div>ENROLL</div>
+      <div>SUPPORT US</div>
     </>
   )
 }
