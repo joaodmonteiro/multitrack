@@ -22,4 +22,5 @@
 
 .carousel_slider > img {
     width: 100%;
+    height: auto;
 }

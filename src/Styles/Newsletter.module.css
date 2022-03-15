@@ -1,0 +1,17 @@
+.input {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid rgb(179, 179, 179);
+    font-size: 1vw;
+}
+.input:focus {
+    outline: none;
+}
+
+.newsletter {
+    height: 20vw;
+    display: grid;
+    place-items: center end;
+    padding-right: 10vw;
+}
