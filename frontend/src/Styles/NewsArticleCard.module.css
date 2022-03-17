@@ -1,0 +1,12 @@
+.card {
+    width: 250px;
+    background-color: black;
+    color: white;
+    padding: 1vw;
+    font-size: 1vw;
+}
+
+.link {
+    color: white;
+    font-size: .5em;
+}
