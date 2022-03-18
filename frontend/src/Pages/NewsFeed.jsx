@@ -13,7 +13,6 @@ export default function NewsFeed() {
     if(loading) return <p>Loading...</p>
     if(error) return <p>ERROR :/</p>
 
-
   return (
     <div>
         <Heading content={content} color={color}/>

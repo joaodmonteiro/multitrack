@@ -21,7 +21,6 @@ export default function Navbar({toggleMenu}) {
                 toggleMenu();
               }
           }
-          console.log(window.outerWidth);
         }
         window.addEventListener('resize', handleResize);
         return () => {
