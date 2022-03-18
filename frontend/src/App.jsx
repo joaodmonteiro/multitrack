@@ -14,11 +14,11 @@ function App() {
     <div className={classes.app}>
       <Header/>
       <Routes>
-        <Route path='/' element={<HomePage/>}/>
-        <Route path='/news-feed' element={<NewsFeed/>}/>
-        <Route path='/news-articles/:id' element={<NewsArticle/>}/>
-        <Route path='/about-us' element={<AboutUs/>}/>
-        <Route path='/meet-the-fellows' element={<MeetTheFellows/>}/>
+        <Route path='/multitrack' element={<HomePage/>}/>
+        <Route path='/multitrack/news-feed' element={<NewsFeed/>}/>
+        <Route path='/multitrack/news-articles/:id' element={<NewsArticle/>}/>
+        <Route path='/multitrack/about-us' element={<AboutUs/>}/>
+        <Route path='/multitrack/meet-the-fellows' element={<MeetTheFellows/>}/>
       </Routes>
 
       <Newsletter/>
