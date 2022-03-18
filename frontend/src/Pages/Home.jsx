@@ -16,9 +16,9 @@ export default function HomePage() {
                 <div>SUPPORT US</div>
             </div>
         </div>
-        <div className={classes.homeNav}><Link className={classes.link} to='/meet-the-fellows'><div>OUR STORY</div></Link></div>
-        <div className={classes.homeNav}><Link className={classes.link} to='/meet-the-fellows'><div>MEET THE FELLOWS</div></Link></div>
-        <div className={classes.homeNav}><Link className={classes.link} to='/meet-the-fellows'><div>NEWS FEED</div></Link></div>
+        <div className={classes.homeNav}><Link className={classes.link} to='/multitrack/meet-the-fellows'><div>OUR STORY</div></Link></div>
+        <div className={classes.homeNav}><Link className={classes.link} to='/multitrack/meet-the-fellows'><div>MEET THE FELLOWS</div></Link></div>
+        <div className={classes.homeNav}><Link className={classes.link} to='/multitrack/meet-the-fellows'><div>NEWS FEED</div></Link></div>
     </>
   )
 }

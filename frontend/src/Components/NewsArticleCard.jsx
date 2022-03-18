@@ -7,7 +7,7 @@ export default function NewsArticleCard({id, title}) {
     <div className={classes.card}>
         <div>
             <h2>{title}</h2>
-            <Link className={classes.link} to={`/news-articles/${id}`}>READ MORE</Link>
+            <Link className={classes.link} to={`/multitrack/news-articles/${id}`}>READ MORE</Link>
         </div>
     </div>
   )

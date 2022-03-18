@@ -19,15 +19,15 @@ export default function Header() {
   return (
     <>
     <div className={classes.header}>
-        <div className={classes.logo}><Link className={classes.link} to='/'><img src={logo}/></Link></div>
+        <div className={classes.logo}><Link className={classes.link} to='/multitrack'><img src={logo}/></Link></div>
         <div className={classes.navbar}><Navbar toggleMenu={toggleMenu}/></div>
     </div>
         {isMenuOpen && 
           <ul className={classes.navbar__container__mobile}>
-            <li className={classes.applicants}><Link className={classes.link} to='/'><div>APPLICANTS</div></Link></li>
-            <li><Link className={classes.link} to='/'><div>SPONSORS</div></Link></li>
-            <li><Link className={classes.link} to='/news-feed'><div>NEWS</div></Link></li>
-            <li className={classes.about}><Link className={classes.link} to='/about-us'><div>ABOUT US</div></Link></li>
+            <li className={classes.applicants}><Link className={classes.link} to='/multitrack'><div>APPLICANTS</div></Link></li>
+            <li><Link className={classes.link} to='/multitrack'><div>SPONSORS</div></Link></li>
+            <li><Link className={classes.link} to='/multitrack/news-feed'><div>NEWS</div></Link></li>
+            <li className={classes.about}><Link className={classes.link} to='/multitrack/about-us'><div>ABOUT US</div></Link></li>
           </ul>
         }
     </>
