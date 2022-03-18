@@ -1,4 +1,5 @@
 import { Route, Routes } from 'react-router-dom'
+import { useEffect, useState } from 'react'
 import HomePage from './Pages/Home'
 import Header from './Components/Header'
 import Footer from './Components/Footer'
@@ -10,6 +11,24 @@ import MeetTheFellows from './Pages/MeetTheFellows'
 import NewsArticle from './Pages/NewsArticle'
 
 function App() {
+  const [mobileLayout, setMobileLayout] = useState(false);
+
+  useEffect(() => {
+    handleResize();
+
+    function handleResize() {
+      if(window.innerWidth < 600 || window.outerWidth < 600) {
+        setMobileLayout(true);
+      } else {
+          setMobileLayout(false);
+      }
+    }
+    window.addEventListener('resize', handleResize);
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    }
+  }, [])
+
   return (
     <div className={classes.app}>
       <Header/>
@@ -24,7 +43,7 @@ function App() {
       <Newsletter/>
       
       
-      <Footer/>
+      {!mobileLayout && <Footer/>}
     </div>
   )
 }

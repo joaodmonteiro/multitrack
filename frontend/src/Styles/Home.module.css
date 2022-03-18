@@ -54,3 +54,15 @@
     height: fit-content;
     color: black;
 }
+
+@media only screen and (max-width: 600px) {
+    .enroll_support > div > div {
+        font-size: 4vw;
+    }
+
+    .homeNav {
+        height: 12vw;
+        font-size: 4vw;
+        padding-top: 1vw;
+    }
+}

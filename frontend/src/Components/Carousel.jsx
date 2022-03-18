@@ -56,9 +56,9 @@ export default function Carousel() {
     return (
         <div className={classes.carousel}>
             <div style={styles} className={classes.carousel_slider}>
-                <img src={image1} alt="" />
-                <img src={image2} alt="" />
-                <img src={image3} alt="" />
+                <div className={classes.carousel_slider_frame}><img src={image1} alt="" /></div>
+                <div className={classes.carousel_slider_frame}><img src={image2} alt="" /></div>
+                <div className={classes.carousel_slider_frame}><img src={image3} alt="" /></div>
             </div>
             <div className={classes.slider_container}>
                 <input className='range_slider' type='range' min='0' max='4' step='1' onChange={handleSlider} ></input>
