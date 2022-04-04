@@ -26,6 +26,7 @@
 .navbar {
     width: 75vw;
     min-height: 100%;
+    font-family: HelveticaNeueLTPro;
 }
 
 .navbar__container__mobile {
@@ -43,15 +44,16 @@
 
 .navbar__container__mobile > li {
     width: 100%;
-    height: 100%;
+    height: 20vw;
     border-bottom: 1px solid white;
+    font-size: 5vw;
 }
 
 .navbar__container__mobile > li > .link {
     display: grid;
     place-items: center;
     color: white;
-    padding: 2vw 1vw;
+    padding-top: 1vw;
     height: 100%;
     width: 100%;
 }

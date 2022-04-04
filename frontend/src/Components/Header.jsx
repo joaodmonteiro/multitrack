@@ -25,7 +25,7 @@ export default function Header() {
         {isMenuOpen && 
           <ul className={classes.navbar__container__mobile}>
             <li className={classes.applicants}><Link className={classes.link} to='/multitrack' onClick={toggleMenu}><div>APPLICANTS</div></Link></li>
-            <li><Link className={classes.link} to='/multitrack' onClick={toggleMenu}><div>SPONSORS</div></Link></li>
+            <li><Link className={classes.link} to='/multitrack/sponsors' onClick={toggleMenu}><div>SPONSORS</div></Link></li>
             <li><Link className={classes.link} to='/multitrack/news-feed' onClick={toggleMenu}><div>NEWS</div></Link></li>
             <li className={classes.about}><Link className={classes.link} to='/multitrack/about-us' onClick={toggleMenu}><div>ABOUT US</div></Link></li>
           </ul>

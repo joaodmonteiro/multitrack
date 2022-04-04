@@ -9,6 +9,7 @@ import Newsletter from './Components/Newsletter'
 import NewsFeed from './Pages/NewsFeed'
 import MeetTheFellows from './Pages/MeetTheFellows'
 import NewsArticle from './Pages/NewsArticle'
+import Sponsors from './Pages/Sponsors'
 
 function App() {
   const [mobileLayout, setMobileLayout] = useState(false);
@@ -38,9 +39,10 @@ function App() {
         <Route path='/multitrack/news-articles/:id' element={<NewsArticle/>}/>
         <Route path='/multitrack/about-us' element={<AboutUs/>}/>
         <Route path='/multitrack/meet-the-fellows' element={<MeetTheFellows/>}/>
+        <Route path='/multitrack/sponsors' element={<Sponsors/>}/>
       </Routes>
 
-      <Newsletter/>
+      {/* <Newsletter/> */}
       
       
       {!mobileLayout && <Footer/>}

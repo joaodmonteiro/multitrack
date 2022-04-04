@@ -3,6 +3,27 @@
   src: url('./HelveticaNeueLTProBdEx.otf');
 }
 
+@font-face {
+  font-family: HelveticaNeueLTProMedium;
+  src: url('./HelveticaNeueLTProMd.otf');
+}
+
+@font-face {
+  font-family: HelveticaNeueLTProRoman;
+  src: url('./HelveticaNeueLTProRoman.otf');
+}
+
+@font-face {
+  font-family: HelveticaNeueLTProBd;
+  src: url('./HelveticaNeueLTProBd.otf');
+}
+
+:root {
+  --fs-small: clamp(1rem, 1.4vw, 1.6rem);
+  --fs-normal: clamp(1.4rem, 1.8vw, 3rem);
+  --fs-big: clamp(1.6rem, 1.8vw, 3.2rem);
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -18,4 +39,50 @@ code {
 
 a {
   text-decoration: none;
+}
+
+p, .list {
+  font-family: HelveticaNeueLTProRoman;
+  font-size: var(--fs-small);
+  margin: 1vw 0 0 0;
+  line-height: 1.5em;
+}
+
+h1 {
+  font-family: HelveticaNeueLTProMedium;
+  margin: 0 0 1vw 0;
+  font-weight: 400;
+  font-size: var(--fs-big);
+}
+
+blockquote {
+  font-family: HelveticaNeueLTProBd;
+  font-size: var(--fs-normal);
+  margin: 0;
+}
+
+ul {
+  padding: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+.list > li::before {
+  content: '- ';
+}
+
+@media only screen and (max-width: 600px) {
+  p, .list {
+    /* font-size: 3vw; */
+  }
+
+  blockquote {
+    /* font-size: 4vw; */
+  }
+
+  h1 {
+    /* font-size: 5vw; */
+  }
 }

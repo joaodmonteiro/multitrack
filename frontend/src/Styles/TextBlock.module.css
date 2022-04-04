@@ -1,0 +1,28 @@
+.block {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    border-top: 1px solid black;
+    border-left: 1px solid black;
+    padding: 6vw;
+    height: 100%;
+    max-width: 50vw;
+}
+
+.block > h1 {
+    /* font-size: 2.2vw; */
+}
+
+.block > p {
+    margin-top: 1vw;
+}
+
+.block > * > * > li {
+    margin-top: 1.4vw;
+}
+
+@media only screen and (max-width: 600px) {
+    .block {
+        max-width: 100vw;
+    }
+}

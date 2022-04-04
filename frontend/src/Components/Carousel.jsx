@@ -11,54 +11,49 @@ export default function Carousel() {
 
     useEffect(() => {
         document.querySelector('.range_slider').value = 1;
-    }, [])
+
+        let timer = setInterval(() => {
+            nextSlide();
+        }, 4000);
+
+        return () => clearInterval(timer);
+    }, []);
 
     let styles = {
         transform: `translateX(${translateAmount}vw)` 
     }
 
-    function handleRightButtonClick() {
-        if(translateAmount != -200) {
-            setTranslateAmount((prevAmount) => prevAmount - 100);
-        }
-    }
-
-    function handleLeftButtonClick() {
-        if(translateAmount != 0) {
-            setTranslateAmount((prevAmount) => prevAmount + 100);
-        }
-    }
-
     function handleSlider() {
-        let sliderValue = document.querySelector('.range_slider').value;
 
-        if(sliderValue < 1) {
-            document.querySelector('.range_slider').value = 1;
-            sliderValue = 1;
-        } else if(sliderValue > 3) {
-            document.querySelector('.range_slider').value = 3;
-            sliderValue = 3;
+        let slider = document.querySelector('.range_slider');
+
+        if(slider.value < 1) {
+            slider.value = 1;
+        } else if(slider.value > 3) {
+            slider.value = 3;
         }
 
+        setTranslateAmount((slider.value - 1) * -100);
+    }
+
+    function nextSlide() {
+        let slider = document.querySelector('.range_slider');
+        if(slider.value < 3) {
+            slider.value++;
+            setTranslateAmount((slider.value - 1) * -100);
+        } else {
+            slider.value = 1;
+            setTranslateAmount((slider.value - 1) * -100);
+        }
         
-
-        if(sliderValue - currentSlide < 0) {
-            setTranslateAmount((prevAmount) => (prevAmount - (100 * (sliderValue - currentSlide))));
-            setCurrentSlide(sliderValue);
-        } else if(sliderValue - currentSlide > 0) {
-            setTranslateAmount((prevAmount) => (prevAmount - (100 * (sliderValue - currentSlide))));
-            setCurrentSlide(sliderValue);
-        }
-
-        console.log(document.querySelector('.range_slider').value);
     }
 
     return (
         <div className={classes.carousel}>
             <div style={styles} className={classes.carousel_slider}>
-                <div className={classes.carousel_slider_frame}><img src={image1} alt="" /></div>
                 <div className={classes.carousel_slider_frame}><img src={image2} alt="" /></div>
                 <div className={classes.carousel_slider_frame}><img src={image3} alt="" /></div>
+                <div className={classes.carousel_slider_frame}><img src={image1} alt="" /></div>
             </div>
             <div className={classes.slider_container}>
                 <input className='range_slider' type='range' min='0' max='4' step='1' onChange={handleSlider} ></input>
