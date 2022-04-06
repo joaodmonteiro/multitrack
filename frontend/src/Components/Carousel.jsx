@@ -14,7 +14,7 @@ export default function Carousel() {
 
         let timer = setInterval(() => {
             nextSlide();
-        }, 4000);
+        }, 3000);
 
         return () => clearInterval(timer);
     }, []);

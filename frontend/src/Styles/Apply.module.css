@@ -1,0 +1,34 @@
+.body {
+    display: flex;
+}
+
+.body > * {
+    border-top: 1px solid black;
+    display: flex;
+    width: 50vw;
+}
+
+.image {
+    border-left: 1px solid black;
+}
+
+.image > img {
+    width: 100%;
+    object-fit: cover;
+    height: auto;
+}
+
+@media only screen and (max-width: 600px) {
+    .body {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .image {
+        border-left: none;
+    }
+
+    .body > * {
+        width: 100vw;
+    }
+}

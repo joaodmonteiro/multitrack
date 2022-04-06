@@ -1,0 +1,18 @@
+.support {
+    text-align: center;
+    padding-bottom: 10vw;
+    font-family: HelveticaNeueLTPro;
+}
+
+.body {
+    border-top: 1px solid black;
+}
+
+.body > h2 {
+    font-size: clamp(1rem, 2.6vw, 4rem);
+    margin: 6vw 0 6vw 0;
+}
+
+.body > p {
+    font-family: HelveticaNeueLTPro;
+}

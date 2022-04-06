@@ -44,7 +44,7 @@ export default function Navbar({toggleMenu}) {
           {mobileLayout && <div onClick={handleMenuClick} className={classes.menu} to='/multitrack'><div className={classes.burger}><img src={burger}/></div></div>}
           {!mobileLayout && 
               <ul className={classes.navbar__container}>
-                  <li className={classes.applicants}><Link className={classes.link} to='/multitrack'><div>APPLICANTS</div></Link></li>
+                  <li className={classes.applicants}><Link className={classes.link} to='/multitrack/apply'><div>APPLY</div></Link></li>
                   <li><Link className={classes.link} to='/multitrack/sponsors'><div>SPONSORS</div></Link></li>
                   <li><Link className={classes.link} to='/multitrack/news-feed'><div>NEWS</div></Link></li>
                   <li className={classes.about}><Link className={classes.link} to='/multitrack/about-us'><div>ABOUT US</div></Link></li>

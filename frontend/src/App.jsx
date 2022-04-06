@@ -10,6 +10,10 @@ import NewsFeed from './Pages/NewsFeed'
 import MeetTheFellows from './Pages/MeetTheFellows'
 import NewsArticle from './Pages/NewsArticle'
 import Sponsors from './Pages/Sponsors'
+import SupportUs from './Pages/SupportUs'
+import Apply from './Pages/Apply'
+import ScrollToTop from './Hooks/scrollToTop'
+import Contact from './Pages/Contact'
 
 function App() {
   const [mobileLayout, setMobileLayout] = useState(false);
@@ -40,6 +44,9 @@ function App() {
         <Route path='/multitrack/about-us' element={<AboutUs/>}/>
         <Route path='/multitrack/meet-the-fellows' element={<MeetTheFellows/>}/>
         <Route path='/multitrack/sponsors' element={<Sponsors/>}/>
+        <Route path='/multitrack/support-us' element={<SupportUs/>}/>
+        <Route path='/multitrack/apply' element={<Apply/>}/>
+        <Route path='/multitrack/contact' element={<Contact/>}/>
       </Routes>
 
       {/* <Newsletter/> */}

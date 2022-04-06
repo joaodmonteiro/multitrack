@@ -20,14 +20,6 @@
     flex-grow: 1;
 }
 
-.navbar__container > li:hover {
-    background-color: white;
-}
-
-.navbar__container > li:hover > * {
-    color: black;
-}
-
 .navbar__container > li:not(.about) {
     border-right: 1px solid rgb(163, 163, 163);
 }
@@ -59,4 +51,14 @@
     display: grid;
     place-items: center;
     height: 100%;
+}
+
+@media (hover: hover) {
+    .navbar__container > li:hover {
+        background-color: white;
+    }
+    
+    .navbar__container > li:hover > * {
+        color: black;
+    }
 }

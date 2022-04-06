@@ -13,7 +13,7 @@ export default function AboutUs() {
 
   const whoWeAreBody = "Multitrack is organised by a volunteer steering team. Past team members include Husain Husaini (from Wire Free Productions), Zezi Ifore (broadcaster) and Leanne Alie (BBC and independent podcast project manager and diversity consultant).";
   const whoWeAreTitle = "Who we are";
-  const whoWeAreStyle = { gridArea: 'whoWeAre', justifyContent: 'center' };
+  const whoWeAreStyle = { gridArea: 'whoWeAre', justifyContent: 'center', borderTop: '1px solid black'};
 
   const whyWeExistTitle = "Why we exist";
   const whyWeExistBody = [
@@ -21,10 +21,10 @@ export default function AboutUs() {
     `The report also noted that ‘Barriers of social class and privilege can prevent the widest pool of people from being able to fulfil their potential, regardless of their background.`,
     `The research paper ‘Panic! Social Class, Taste and Ine qualities in the Creative Industries‘ (commissioned by Create London) also states that ‘the cultural and crea tive industries are marked by significant inequalities; in particular […] the social class background of the work force, and how this intersects with other issues, includ ing attitudes and values, experiences of working for free, social networks, and cultural tastes.’`
   ]
-  const whyWeExistStyle = { gridArea: 'whyWeExist' };
+  const whyWeExistStyle = { gridArea: 'whyWeExist', borderTop: '1px solid black' };
 
   const yellowCopy = "‘Barriers of social class and privilege can prevent the widest pool of people from being able to fulfil their potential, regardless of their background.’"
-  const yellowCopyStyle = { gridArea: 'yellowCopy', backgroundColor: 'yellow', justifyContent: 'center'};
+  const yellowCopyStyle = { gridArea: 'yellowCopy', backgroundColor: 'yellow', justifyContent: 'center', borderTop: '1px solid black', borderLeft: '1px solid black'};
 
   const steeringTeamTitle = '2021 Steering Team';
   const steeringTeamBody = [
@@ -34,15 +34,15 @@ export default function AboutUs() {
     'Nicole Logan – Reduced Listening',
     'Joby Waldman – Reduced Listening'
   ]
-  const steeringTeamStyle = { gridArea: 'steeringTeam'}
+  const steeringTeamStyle = { gridArea: 'steeringTeam', borderTop: '1px solid black', borderLeft: '1px solid black'}
 
   const joinUsTitle = 'Join us';
   const joinUsBody = 'If you are interested in supporting Multitrack or be coming a Fellow, contact us today or follow our news bulletin for the latest opportunties.';
-  const joinUsStyle = { gridArea: 'joinUs', justifyContent: 'center' };
+  const joinUsStyle = { gridArea: 'joinUs', justifyContent: 'center', borderTop: '1px solid black', borderLeft: '1px solid black', borderBottom: '1px solid black'};
 
   const ourStoryTitle = 'Our story';
   const ourStoryBody = 'The idea for Multitrack came out of an event in 2018, where members of the UK audio community got together to ask the question ‘How can we make our audio community better?’ After the event, a group of people got together to create a new initiative aimed at improving access to the audio industry, for people who are underrepresented and may be struggling to get their break.';
-  const ourStoryStyle = { gridArea: 'ourStory'};
+  const ourStoryStyle = { gridArea: 'ourStory', borderTop: '1px solid black'};
 
   const ourValuesTitle = 'Our values';
   const ourValuesBody = [
@@ -54,7 +54,7 @@ export default function AboutUs() {
     'We believe in fairness and equality',
     'A diversity of voices and opinions will make the work created within this industry better'
   ];
-  const ourValuesStyle = { gridArea: 'ourValues'};
+  const ourValuesStyle = { gridArea: 'ourValues', borderTop: '1px solid black', borderLeft: '1px solid black'};
 
   return (
     <div>

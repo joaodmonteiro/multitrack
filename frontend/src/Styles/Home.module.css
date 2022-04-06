@@ -12,20 +12,13 @@
     border-bottom: 1px solid black;
 }
 
-.enroll_support > div > div {
+.enroll_support {
     font-size: 2vw;
+    color: black;
 }
 
 .enroll {
     border-right: 1px solid black;
-}
-
-.enroll:hover {
-    background-color: #D042E5;
-}
-
-.support:hover {
-    background-color: #FFA100;
 }
 
 .homeNav {
@@ -34,29 +27,27 @@
     border-bottom: 1px solid black;
 }
 
-.homeNav:hover {
-    background-color: black;
-}
-
-.homeNav:hover > .link > div{
-    color: white;
-}
-
-.homeNav > .link {
+.link {
+    box-sizing: border-box;
     display: flex;
     align-items: center;
     padding-left: 5vw;
-    max-width: 100%;
+    width: 100%;
     height: 100%;
 }
 
-.homeNav > .link > div {
+.enroll_support > div > .link {
+    justify-content: center;
+    padding: 0;
+}
+
+.link > div {
     height: fit-content;
     color: black;
 }
 
 @media only screen and (max-width: 600px) {
-    .enroll_support > div > div {
+    .enroll_support > div .link > div {
         font-size: 4vw;
     }
 
@@ -64,5 +55,23 @@
         height: 12vw;
         font-size: 4vw;
         padding-top: 1vw;
+    }
+}
+
+@media (hover: hover) {
+    .homeNav:hover {
+        background-color: black;
+    }
+    
+    .homeNav:hover > .link > div{
+        color: white;
+    }
+
+    .enroll:hover {
+        background-color: #D042E5;
+    }
+    
+    .support:hover {
+        background-color: #FFA100;
     }
 }

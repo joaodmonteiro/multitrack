@@ -43,7 +43,7 @@
         grid-template-columns: 1fr;
     }
     .leftColumn {
-        width: 100%;
+        max-width: 100%;
     }
 
     .leftColumn > p {

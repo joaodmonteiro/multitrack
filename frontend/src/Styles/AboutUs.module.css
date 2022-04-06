@@ -39,6 +39,7 @@
     padding: 4vw;
     border-top: 1px solid black;
     border-left: 1px solid black;
+    border-bottom: 1px solid black;
     max-height: fit-content;
 }
 
@@ -77,5 +78,6 @@
 
     .waveform {
         width: 100%;
+        border-bottom: none;
     }
 }
