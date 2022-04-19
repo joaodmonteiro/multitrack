@@ -1,7 +1,6 @@
-.sponsors {
+.body {
     display: grid;
     background-color: #CC52E0;
-    grid-area: partnerships;
     max-width: 100vw;
     grid-template-columns: repeat(2, 50vw);
 }
@@ -24,13 +23,16 @@
 .icons {
     display: flex;
     gap: 2vw;
-    margin-top: 3vw;
+    padding: 3vw;
+    justify-content: space-around;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
 }
 
 .icon {
     display: grid;
     place-items: center;
-    width: 10vw;
+    width: clamp(100px, 10vw, 200px);
     aspect-ratio: 1/1;
 }
 
@@ -38,8 +40,13 @@
     width: 100%;
 }
 
+.link {
+    color: black;
+    text-decoration: underline;
+}
+
 @media only screen and (max-width: 600px) {
-    .sponsors {
+    .body {
         grid-template-columns: 1fr;
     }
     .leftColumn {
@@ -60,5 +67,9 @@
 
     .righColumn > * {
         margin-top: 10vw;
+    }
+
+    .icons {
+        flex-wrap: wrap;
     }
 }

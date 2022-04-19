@@ -7,5 +7,8 @@
 
 .body > p {
     max-width: 40em;
-    font-size: .8rem;
+}
+
+.body > h1 {
+    font-family: HelveticaNeueLTPro63MdEx;
 }

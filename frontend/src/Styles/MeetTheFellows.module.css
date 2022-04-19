@@ -1,0 +1,34 @@
+.body {
+    display: flex;
+    justify-content: center;
+}
+
+.profiles {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* gap: 4vw; */
+    width: 80vw;
+    padding-bottom: 6vw;
+}
+
+.profile {
+    padding: 6vw 2vw 0 2vw;
+}
+
+.photo > img {
+    width: 100%;
+}
+
+.description > h2 {
+    font-size: var(--fs-normal);
+}
+
+@media only screen and (max-width: 600px) {
+    .profiles {
+        grid-template-columns: 1fr;
+    }
+
+    .profile {
+        padding: 12vw 2vw 0 2vw;
+    }
+}

@@ -5,6 +5,8 @@ import './index.css'
 import App from './App'
 import ScrollToTop from './Hooks/scrollToTop'
 
+console.log(import.meta.env.MODE);
+
 ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>

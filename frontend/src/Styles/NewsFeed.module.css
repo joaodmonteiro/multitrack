@@ -1,7 +1,6 @@
 .content {
-    display: flex;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     padding: 4vw;
-    flex-wrap: wrap;
     gap: 20px;
 }

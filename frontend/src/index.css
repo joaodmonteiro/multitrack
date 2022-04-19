@@ -9,6 +9,11 @@
 }
 
 @font-face {
+  font-family: HelveticaNeueLTPro63MdEx;
+  src: url('./HelveticaNeueLTProMdEx.otf');
+}
+
+@font-face {
   font-family: HelveticaNeueLTProRoman;
   src: url('./HelveticaNeueLTProRoman.otf');
 }
@@ -19,14 +24,19 @@
 }
 
 :root {
-  --fs-small: clamp(1rem, 1vw, 1.6rem);
+  --fs-small: clamp(1rem, 1.2vw, 1.6rem);
   --fs-normal: clamp(1.4rem, 1.4vw, 3rem);
   --fs-big: clamp(1.6rem, 1.8vw, 3.2rem);
+  --fs-verybig: clamp(1.2rem, 3.2vw, 5rem);
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-  margin: 0;
-  padding: 0;
   font-family: HelveticaNeueLTPro;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

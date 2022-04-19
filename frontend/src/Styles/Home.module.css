@@ -1,77 +1,203 @@
-.enroll_support {
-    display: flex;
+.homePage {
+    display: grid;
+    grid-template-areas: 
+        "carousel carousel"
+        "banner1 singerPhoto"
+        "ourStory ourStory"
+        "meetTheFellows meetTheFellows"
+        "apply sponsors"
+        "banner2 groupPhoto"
+        "news news"
+        "support support";
+    grid-template-columns: repeat(2, 50vw);
 }
 
-.enroll_support > div {
-    width: 50vw;
+.banner1 {
+    grid-area: banner1;
+    border-top: 1px solid black;
+}
+
+.banner2 {
+    grid-area: banner2;
+}
+
+.banner {
+    box-sizing: border-box;
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    padding: 0 6vw;
+    justify-content: space-between;
+}
+
+.banner > h1 {
+    font-family: HelveticaNeueLTPro63MdEx;
+    font-size: var(--fs-verybig);
+    font-weight: 200;
+    max-width: 10em;
+    margin: 6vw 0 16vw 0;
+}
+
+.banner > p {
+    font-size: clamp(1rem, 2vw, 4rem);
+    max-width: 20em;
+    margin-bottom: 6vw;
+}
+
+.banner > p > .link {
+    color: black;
+    text-decoration: underline;
+    font-size: clamp(.8rem, 2vw, 4rem);
+    font-family: HelveticaNeueLTProRoman;
+}
+
+.singerPhoto {
+    grid-area: singerPhoto;
     display: flex;
     justify-content: center;
-    align-items: center;
-    aspect-ratio: 10/6;
+    max-width: 100%;
     border-top: 1px solid black;
     border-bottom: 1px solid black;
 }
 
-.enroll_support {
-    font-size: 2vw;
-    color: black;
-}
-
-.enroll {
-    border-right: 1px solid black;
+.singerPhoto > img {
+    width: 100%;
+    object-fit: cover;
 }
 
 .homeNav {
-    height: 6vw;
-    font-size: 2vw;
+    /* height: 6vw; */
     border-bottom: 1px solid black;
 }
 
-.link {
-    box-sizing: border-box;
+.homeNav > .link {
     display: flex;
     align-items: center;
-    padding-left: 5vw;
+    padding-left: 6vw;
+    padding-top: 1.5rem;
+    padding-bottom: 1rem;
     width: 100%;
     height: 100%;
 }
 
-.enroll_support > div > .link {
+.bigHomeNav {
+    aspect-ratio: 4/ 3;
+}
+
+.bigHomeNav > .link {
+    display: flex;
     justify-content: center;
-    padding: 0;
+    align-items: center;
+    height: 100%;
+}
+
+.ourStory {
+    grid-area: ourStory;
+}
+
+.meet {
+    grid-area: meetTheFellows;
+}
+
+.newsFeed {
+    grid-area: news;
+}
+
+.supportUs {
+    grid-area: support;
+    border-bottom: none;
 }
 
 .link > div {
     height: fit-content;
     color: black;
+    font-family: HelveticaNeueLTPro63MdEx;
+    font-size: clamp(1rem, 2vw, 4rem);
+}
+
+.imageBlock {
+    grid-area: groupPhoto;
+    display: flex;
+}
+
+.imageBlock > img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.apply {
+    border-right: 1px solid black;
+    grid-area: apply;
+    border-bottom: 1px solid black;
+}
+
+.sponsors {
+    grid-area: sponsors;
+    border-bottom: 1px solid black;
+}
+
+.banner2 {
+    grid-area: banner2;
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+}
+
+.groupPhoto {
+    grid-area: groupPhoto;
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid black;
+    overflow: hidden;
+}
+
+.groupPhoto > img {
+    max-width: 100%;
+    /* height: auto; */
+    object-fit: cover;
 }
 
 @media only screen and (max-width: 600px) {
-    .enroll_support > div .link > div {
-        font-size: 4vw;
+    .homePage {
+        grid-template-areas: 
+        "carousel carousel"
+        "banner1 banner1"
+        "singerPhoto singerPhoto"
+        "ourStory ourStory"
+        "meetTheFellows meetTheFellows"
+        "apply sponsors"
+        "banner2 banner2"
+        "groupPhoto groupPhoto"
+        "news news"
+        "support support";
     }
 
-    .homeNav {
-        height: 12vw;
-        font-size: 4vw;
-        padding-top: 1vw;
+    .banner {
+        border-right: none;
+    }
+
+    .banner > h1 {
+        max-width: 20em;
+    }
+
+    .banner > p {
+        max-width: 20em;
     }
 }
-
 @media (hover: hover) {
-    .homeNav:hover {
-        background-color: black;
-    }
-    
-    .homeNav:hover > .link > div{
-        color: white;
-    }
-
-    .enroll:hover {
+    .apply:hover {
         background-color: #D042E5;
     }
     
-    .support:hover {
+    .sponsors:hover {
         background-color: #FFA100;
+    }
+
+    .homeNav:hover {
+        background-color: black;
+    }
+
+    .homeNav:hover > .link > div {
+        color: white;
     }
 }

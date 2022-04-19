@@ -1,4 +1,5 @@
 import React from 'react'
+import ContactForm from '../Components/ContactForm';
 import Heading from '../Components/Heading'
 import classes from '../Styles/SupportUs.module.css'
 
@@ -13,8 +14,8 @@ export default function SupportUs() {
           <p>SPARE EQUIPMENT</p>
           <p>FINANCIAL DONATION</p>
           <p>OPPORTUNITY</p>
-          <p>contact form</p>
         </div>
+        <ContactForm/>
     </div>
   )
 }

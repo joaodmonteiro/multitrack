@@ -49,7 +49,7 @@ function App() {
         <Route path='/multitrack/contact' element={<Contact/>}/>
       </Routes>
 
-      {/* <Newsletter/> */}
+      <Newsletter/>
       
       
       {!mobileLayout && <Footer/>}

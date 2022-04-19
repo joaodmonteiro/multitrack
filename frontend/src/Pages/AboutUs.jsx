@@ -37,7 +37,7 @@ export default function AboutUs() {
   const steeringTeamStyle = { gridArea: 'steeringTeam', borderTop: '1px solid black', borderLeft: '1px solid black'}
 
   const joinUsTitle = 'Join us';
-  const joinUsBody = 'If you are interested in supporting Multitrack or be coming a Fellow, contact us today or follow our news bulletin for the latest opportunties.';
+  const joinUsBody = 'If you are interested in supporting Multitrack or be coming a Fellow, contact us today or follow our news bulletin for the latest opportunities.';
   const joinUsStyle = { gridArea: 'joinUs', justifyContent: 'center', borderTop: '1px solid black', borderLeft: '1px solid black', borderBottom: '1px solid black'};
 
   const ourStoryTitle = 'Our story';
@@ -54,7 +54,7 @@ export default function AboutUs() {
     'We believe in fairness and equality',
     'A diversity of voices and opinions will make the work created within this industry better'
   ];
-  const ourValuesStyle = { gridArea: 'ourValues', borderTop: '1px solid black', borderLeft: '1px solid black'};
+  const ourValuesStyle = { gridArea: 'ourValues', borderLeft: '1px solid black'};
 
   return (
     <div>
@@ -71,7 +71,7 @@ export default function AboutUs() {
           <img src={waveform}/>
         </div>
         <TextBlock title={<h1>{joinUsTitle}</h1>} body={<p>{joinUsBody}</p>} style={joinUsStyle}/>
-        <Sponsors/>
+        {/* <Sponsors/> */}
         <TextBlock title={<h1>{ourStoryTitle}</h1>} body={<p>{ourStoryBody}</p>} style={ourStoryStyle}/>
         <div className={classes.imageBlock} id='groupPhoto2'>
           <img src={groupPhoto2}/>
