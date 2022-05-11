@@ -3,8 +3,8 @@
 ## Introduction
 
 Multitrack is a charity that works with artists and producers by providing fellowships and work placements for underrepresented people in the audio industry.
-The UX design was provided and created by Catarina Coelho(link). I really liked the design aesthetic so I used it as a way to practice my React and CSS skills.
-Most of the information and assets like photographs were pulled from [Multitrack’s official website](https://www.multitrack.uk/) .
+The UI was provided and created by Catarina Coelho(https://catarinacoelho.pt/). I really liked the design aesthetic so I used it as a way to practice my React and CSS skills.
+Most of the information and assets like photographs were pulled from [Multitrack’s official website](https://www.multitrack.uk/).
 
 ## Stack
 
@@ -19,8 +19,8 @@ Deployed with Github Pages. You can take a look at the [website here](https://jo
 
 ## What I learned?
 
-This was the first time I was using some of these technologies, so I learned a bunch from this project alone.
-One of them was React, which was probably one of the first buzz words I learned about when I started learning web development, and now I understand why. It made me learn a lot about javascript and how a project can/should be structured. I absolutely love it. The way it promotes reusability of modules and how clean and tidy my code looks compared to my vanillaJS projects, just makes for a better coding experience.
+This was the first time I was using some of these technologies, so I learned a bunch from this project.
+One of them was React, which was probably one of the first buzz words I learned about when I started learning web development. And now I understand why! It made me learn a lot about javascript and how a project can/should be structured. I absolutely love it. The way it promotes reusability of modules and how clean and tidy my code looks compared to my vanillaJS projects, just makes for a better coding experience.
 I also got to practice a lot with CSS, especially making a lot of use of CSS grid and Flexbox. CSS can definitely be frustrating at times and there was definitely some moments when I started questioning my ability to center divs but I got through it. I learned how much of a different it makes to really think about how the HTML structure is going to be before starting to code.
 Setting up variables for font sizes and colours is also a good way to make a cohesive layout.
 Even though basically all of the design was already done I got to experiment a bit with Adobe XD which taught me not only some technical design skills but also about the relationship between the designer and the developer and how to make sure that assets are properly set up.
