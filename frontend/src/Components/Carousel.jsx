@@ -53,9 +53,9 @@ export default function Carousel({mobileLayout}) {
         <div className={classes.carousel}>
             {!mobileLayout &&
             <div style={styles} className={classes.carousel_slider}>
-                <div className={classes.carousel_slider_frame}><Link to='/multitrack/apply'><img src={springImage} alt="" /></Link></div>
-                <div className={classes.carousel_slider_frame}><Link to='/multitrack/meet-the-fellows'><img src={image3} alt="" /></Link></div>
-                <div className={classes.carousel_slider_frame}><Link to='/multitrack/about-us'><img src={whatismultitrackimage} alt="" /></Link></div>
+                <div className={classes.carousel_slider_frame}><Link to='/multitrack/apply'><img src={springImage} alt="Applications are now open for 2022 Fellowship" /></Link></div>
+                <div className={classes.carousel_slider_frame}><Link to='/multitrack/meet-the-fellows'><img src={image3} alt="Meet Your Fellows" /></Link></div>
+                <div className={classes.carousel_slider_frame}><Link to='/multitrack/about-us'><img src={whatismultitrackimage} alt="What is Multitrack" /></Link></div>
             </div>}
             {!mobileLayout &&
             <div className={classes.slider_container}>

@@ -24,7 +24,7 @@ export default function Apply() {
         <div className={classes.body}>
             <TextBlock body={bodyText}/>
             <div className={classes.image}>
-                <img src={singerPhoto}></img>
+                <img src={singerPhoto} alt='Singer in a recording studio with headphones on and singing into a microphone'></img>
             </div>
             
         </div>

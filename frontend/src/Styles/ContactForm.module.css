@@ -1,7 +1,9 @@
 .body {
     display: flex;
+    flex-direction: column;
     padding: 6vw 4vw;
     justify-content: center;
+    align-items: center;
     border-top: 1px solid black;
 }
 
@@ -61,6 +63,24 @@
     color: white;
     font-family: HelveticaNeueLTPro;
     padding: .6em 1.6em;
+    cursor: pointer;
+}
+
+.sentNotification {
+    font-family: HelveticaNeueLTProRoman;
+    font-size: var(--fs-normal);
+    margin-left: .6em;
+}
+
+.sentNotificationContainer {
+    display: flex;
+    align-items: center;
+    margin-bottom: 3em;
+}
+
+.sentNotificationContainer > img {
+    width: 1.2em;
+    padding-bottom: .2em;
 }
  
 @media only screen and (max-width: 600px) {

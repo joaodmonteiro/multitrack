@@ -6,7 +6,6 @@ import classes from '../Styles/Home.module.css'
 import { Link } from 'react-router-dom'
 import TextBlock from '../Components/TextBlock.jsx'
 import groupPhoto2 from '../Images/whoweare2.png'
-import waveform from '../Images/waveform2.png'
 import singerPhoto from '../Images/singer.jpeg'
 import getWindowSize from '../Hooks/getWindowSize'
 
@@ -46,7 +45,7 @@ export default function HomePage() {
           <p>We’re creating career changing opportunities for emerging producers.</p>
         </div>
         <div className={classes.singerPhoto}>
-          <img src={singerPhoto}></img>
+          <img src={singerPhoto} alt='Singer in a recording studio with headphones on and singing into a microphone'></img>
         </div>
         <div className={`${classes.ourStory} ${classes.homeNav}`}><Link className={classes.link} to='/multitrack/about-us'><div>OUR STORY</div></Link></div>
         <div className={`${classes.meet} ${classes.homeNav}`}><Link className={classes.link} to='/multitrack/meet-the-fellows'><div>MEET THE FELLOWS</div></Link></div>
@@ -65,7 +64,7 @@ export default function HomePage() {
           <p>Applications for the 2022 Fellowship are <Link className={classes.link} to='/multitrack/apply'>NOW OPEN!</Link></p>
         </div>
         <div className={classes.groupPhoto}>
-          <img src={groupPhoto2}></img>
+          <img src={groupPhoto2} alt='Multitrack team group photo'></img>
         </div>
         <div className={`${classes.newsFeed} ${classes.homeNav}`}><Link className={classes.link} to='/multitrack/news-feed'><div>NEWS FEED</div></Link></div>
         <div className={`${classes.supportUs} ${classes.homeNav}`}><Link className={classes.link} to='/multitrack/support-us'><div>SUPPORT US</div></Link></div>

@@ -54,7 +54,7 @@ export default function MeetTheFellows() {
             {fellows.map( fellow => 
             <div className={classes.profile}>
               <div className={classes.photo}>
-                <img src={fellow.photo} />
+                <img src={fellow.photo} alt={`Head shot photo of ${fellow.name}`}/>
               </div>
               <div className={classes.description}>
                   <h2>{fellow.name}</h2>

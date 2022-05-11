@@ -19,7 +19,7 @@ export default function Header() {
   return (
     <>
     <div className={classes.header}>
-        <div className={classes.logo}><Link className={classes.link} to='/multitrack'><img src={logo}/></Link></div>
+        <div className={classes.logo}><Link className={classes.link} to='/multitrack'><img src={logo} alt='Multitrack logo'/></Link></div>
         <div className={classes.navbar}><Navbar toggleMenu={toggleMenu}/></div>
     </div>
         {isMenuOpen && 

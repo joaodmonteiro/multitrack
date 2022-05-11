@@ -27,7 +27,7 @@ export default function Sponsors() {
         <div className={classes.icons}>
                 {sponsors.map(sponsor => 
                     <div className={classes.icon}>
-                        <img src={sponsor.image}></img>
+                        <img src={sponsor.image} alt={`${sponsor.name} logo`}></img>
                     </div>
                 )}
         </div>

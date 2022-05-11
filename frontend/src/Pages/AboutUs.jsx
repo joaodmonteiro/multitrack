@@ -62,19 +62,19 @@ export default function AboutUs() {
       <div className={classes.body}>
         <TextBlock title={<h1>{whoWeAreTitle}</h1>} body={<p>{whoWeAreBody}</p>} style={whoWeAreStyle}/>
         <div className={classes.imageBlock} id='groupPhoto1'>
-          <img src={groupPhoto}/>
+          <img src={groupPhoto} alt='Multitrack team group photo'/>
         </div>
         <TextBlock title={<h1>{whyWeExistTitle}</h1>} body={whyWeExistBody.map(string => <p>{string}</p>)} style={whyWeExistStyle}/>
         <TextBlock body={<blockquote>{yellowCopy}</blockquote>} style={yellowCopyStyle}/>
         <TextBlock title={<h1>{steeringTeamTitle}</h1>} body={steeringTeamBody.map(string => <p>{string}</p>)} style={steeringTeamStyle}/>
         <div className={classes.waveform}>
-          <img src={waveform}/>
+          <img src={waveform} alt='waveform graphic'/>
         </div>
         <TextBlock title={<h1>{joinUsTitle}</h1>} body={<p>{joinUsBody}</p>} style={joinUsStyle}/>
         {/* <Sponsors/> */}
         <TextBlock title={<h1>{ourStoryTitle}</h1>} body={<p>{ourStoryBody}</p>} style={ourStoryStyle}/>
         <div className={classes.imageBlock} id='groupPhoto2'>
-          <img src={groupPhoto2}/>
+          <img src={groupPhoto2} alt='Multitrack team group photo'/>
         </div>
         <TextBlock title={<h1>{ourValuesTitle}</h1>} body={<div><p>We Believe:</p><ul className='list'>{ourValuesBody.map(value => <li>{value}</li>)}</ul></div>} style={ourValuesStyle}/>
       </div>
