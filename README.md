@@ -3,7 +3,7 @@
 ## Introduction
 
 Multitrack is a charity that works with artists and producers by providing fellowships and work placements for underrepresented people in the audio industry.
-The UI was provided and created by Catarina Coelho(https://catarinacoelho.pt/). I really liked the design aesthetic so I used it as a way to practice my React and CSS skills.
+The UI was provided and created by Catarina Coelho (https://catarinacoelho.pt/). I really liked the design aesthetic so I used it as a way to practice my React and CSS skills.
 Most of the information and assets like photographs were pulled from [Multitrack’s official website](https://www.multitrack.uk/).
 
 ![Screenshot](./frontend/src/Images/website-screenshot.png)
