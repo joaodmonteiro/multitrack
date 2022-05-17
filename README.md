@@ -21,9 +21,7 @@ Deployed with Github Pages. You can take a look at the [website here](https://jo
 
 ## What I learned?
 
-This was the first time I was using some of these technologies, so I learned a bunch from this project.
-One of them was React, which was probably one of the first buzzwords I learned about when I started learning web development. And now I understand why! It made me learn a lot about javascript and how a project can/should be structured. I absolutely love it. The way it promotes the reusability of modules and how clean and tidy my code looks compared to my vanillaJS projects makes for a better coding experience.
-I also got to practice a lot with CSS, especially making a lot of use of CSS grid and Flexbox. CSS can definitely be frustrating at times and there were definitely some moments when I started questioning my ability to center divs but I got through it. I learned how much of a difference it makes to really think about how the HTML structure is going to be before starting to code.
+In this project I got to practice a lot with CSS, especially when it comes to making use of CSS grid and Flexbox. CSS can definitely be frustrating at times and there were definitely some moments when I started questioning my ability to center divs but I got through it. I learned how much of a difference it makes to really think about how the HTML structure is going to be before starting to code.
 Setting up variables for font sizes and colours is also a good way to make a cohesive layout.
 Even though basically all of the design was already done I got to experiment a bit with Adobe XD which taught me not only some technical design skills but also about the relationship between the designer and the developer and how to make sure that assets are properly set up.
 
@@ -63,4 +61,3 @@ I am using Firestore for the text content as well as Cloud Storage for the image
 - **CSS**: Even though I made use of variables for my CSS files, I feel like I spent too much time doing small tweaks in the values of padding, margins, font sizes, etc. And I feel like I could have properly set up all of my design rules in the beginning.
 - **Backend**: Even though I’m happy with how the current setup works, I feel like the ideal way for the backend of the site would be to use a headless CMS like Strapi and have that on a server deployed somewhere like Heroku. Strapi just provides an easier interface for creating content compared to Firebase.
   Another way I could’ve gone with and which I still might add to the website is an admin page with a friendly UI to create news articles. That way I still would be using Firebase for the database but the upload of the articles and images would be done through the website.
-
